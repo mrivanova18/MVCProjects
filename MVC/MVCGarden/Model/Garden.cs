@@ -22,7 +22,7 @@ namespace MVCGarden.Model
         public int KgFruits { get; set; }
         public decimal CalculateSum()
         {
-            return 1.94m * (this.KgFruits * this.PriceFruits + this.KgVegitable * this.PriceVegitables);
+            return (this.KgFruits * this.PriceFruits + this.KgVegitable * this.PriceVegitables)/1.94m;
         }
     }
 }
